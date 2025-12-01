@@ -1,38 +1,22 @@
-@'
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Barbershop Style&Cuts - Документация</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Документация барбершопа Style&Cuts">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
-  <style>
-    .app-name-link img {
-      height: 40px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
   <div id="app"></div>
-  
   <script>
     window.$docsify = {
-      name: '🪒 Barbershop Style&Cuts',
+      name: 'Barbershop Style&Cuts',
       repo: 'stumpymer/barbershop_docs',
       loadSidebar: true,
-      subMaxLevel: 3,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      }
+      subMaxLevel: 3
     }
   </script>
-  
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
-'@ | Out-File -FilePath index.html -Encoding UTF8
