@@ -1,3 +1,4 @@
+@'
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -8,16 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/dark.css">
-  
   <style>
     .app-name-link img {
       height: 40px;
       vertical-align: middle;
       margin-right: 10px;
-    }
-    .sidebar {
-      background-color: #1a1a1a;
     }
   </style>
 </head>
@@ -27,20 +23,16 @@
   <script>
     window.$docsify = {
       name: '🪒 Barbershop Style&Cuts',
-      repo: 'your_username/barbershop_docs',
+      repo: 'stumpymer/barbershop_docs',
       loadSidebar: true,
       subMaxLevel: 3,
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      search: {
-        placeholder: 'Поиск в документации...'
       }
     }
   </script>
   
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
+'@ | Out-File -FilePath index.html -Encoding UTF8

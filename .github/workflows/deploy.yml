@@ -1,16 +1,13 @@
+# 4. Создаем файл в ПРАВИЛЬНОЙ папке
 @'
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches: [main]
-  workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   deploy:
     environment:
@@ -29,4 +26,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-'@ | Out-File -FilePath .github/workflows/deploy.yml -Encoding UTF8
+'@ | Out-File -FilePath ".github/workflows/deploy.yml" -Encoding UTF8
